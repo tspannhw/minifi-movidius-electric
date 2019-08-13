@@ -23,6 +23,20 @@ https://www.datainmotion.dev/2019/08/rapid-iot-development-with-cloudera.html
 
 This will run the Python 3 interface to HS110 Electric Meter:
 
-`(em.sh)
-python3 -W ignore /opt/demo/nifi-energy-monitoring/energymonitor.py 2>/dev/null`
+** (em.sh) ** 
+
+`python3 -W ignore /opt/demo/nifi-energy-monitoring/energymonitor.py 2>/dev/null`
+
+
+** (run2.sh) **
+
+`#!/bin/bash
+
+DATE=$(date +"%Y-%m-%d_%H%M")
+
+fswebcam -q -r 1280x720 --no-banner /opt/demo/images/$DATE.jpg
+#/opt/demo/images/$DATE.jpg
+#all.py
+#python3 -W ignore /opt/demo/sense2.py 2>/dev/null 
+python3 -W ignore /opt/demo/all.py /opt/demo/images/$DATE.jpg 2>/dev/null`
 
