@@ -35,8 +35,6 @@ This will run the Python 3 interface to HS110 Electric Meter:
 DATE=$(date +"%Y-%m-%d_%H%M")
 
 fswebcam -q -r 1280x720 --no-banner /opt/demo/images/$DATE.jpg
-#/opt/demo/images/$DATE.jpg
-#all.py
-#python3 -W ignore /opt/demo/sense2.py 2>/dev/null 
 python3 -W ignore /opt/demo/all.py /opt/demo/images/$DATE.jpg 2>/dev/null`
 
+In this one we capture the webcamera image and feed it to our Python script that runs MXNet, Caffe and Sense ingest.
