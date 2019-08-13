@@ -20,3 +20,9 @@ See:  https://www.datainmotion.dev/2019/08/rapid-iot-development-with-cloudera.h
 ** Running Electric Monitoring **
 
 https://www.datainmotion.dev/2019/08/rapid-iot-development-with-cloudera.html
+
+This will run the Python 3 interface to HS110 Electric Meter:
+
+`(em.sh)
+python3 -W ignore /opt/demo/nifi-energy-monitoring/energymonitor.py 2>/dev/null`
+
